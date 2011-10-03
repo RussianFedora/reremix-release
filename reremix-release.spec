@@ -12,7 +12,7 @@ Group:          System Environment/Base
 License:        GPLv2
 Obsoletes:      rawhide-release redhat-release-as redhat-release-es redhat-release-ws redhat-release-de comps rpmdb-redhat fedora-release sl-release
 Provides:       redhat-release system-release
-Source0:        reremix-release%{?variant_lowercase:-%{variant_lowercase}}-%{full_release_version}.tar.bz2
+Source0:        http://download.rfremix.ru/storage/reremix-release/reremix-release-%{version}.tar.bz2
 Source1:	reremix-install-media-dvd.repo
 
 Requires:	reremix-config
