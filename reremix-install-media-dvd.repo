@@ -1,0 +1,23 @@
+[zarya-install-media-dvd]
+name=ZOS Zarya Install Media DVD - $basearch
+failovermethod=priority
+baseurl=file:///media/Zarya%206%20$basearch%20DVD/
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl6
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl5
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl4
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl3
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-dawson
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-beta
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-legacy-former
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-legacy-release
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-legacy-rhx
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-russianfedora-fixes-fedora
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-russianfedora-free-fedora
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-russianfedora-nonfree-fedora
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-nonfree-fedora
+       file:///etc/pki/rpm-gpg/RPM-GPG-KEY-rpmfusion-free-fedora
+cost=2000
