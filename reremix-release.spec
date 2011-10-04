@@ -6,7 +6,7 @@
 
 Name:           reremix-release%{?variant_lowercase:-%{variant_lowercase}}
 Version:        6.1
-Release:        2.Z
+Release:        1.R
 Summary:        %{product_family}%{?variant_titlecase: %{variant_titlecase}} release file
 Group:          System Environment/Base
 License:        GPLv2
@@ -105,7 +105,7 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
-* Mon Jul 18 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.1-2.Z
+* Mon Jul 18 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.1-1.R
 - update to 6.1
 
 * Mon Mar 28 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.0-6.0.1.2.Z
