@@ -1,12 +1,12 @@
 %define debug_package %{nil}
 %define product_family RERemix
-%define release_name Daybreak
+%define release_name Carbon
 %define base_release_version 6
 %define full_release_version 6.1
 
 Name:           reremix-release%{?variant_lowercase:-%{variant_lowercase}}
 Version:        6.1
-Release:        2.R
+Release:        3.R
 Summary:        %{product_family}%{?variant_titlecase: %{variant_titlecase}} release file
 Group:          System Environment/Base
 License:        GPLv2
@@ -105,6 +105,9 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
+* Sat Oct 29 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.1-3.R
+- set Carbon as name of distribution (such as SL)
+
 * Tue Oct 11 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.1-2.R
 - fix cdrom install repo file
 
