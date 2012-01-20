@@ -105,7 +105,7 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
-* Fri Jan 20 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-0.2.rolling.R
+* Fri Jan 20 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-0.2.rolling.R
 - update to 6rolling version
 
 * Sat Oct 29 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.1-3.R
