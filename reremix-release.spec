@@ -54,12 +54,6 @@ done
 # install media repo file
 install -m644 %{SOURCE1} $RPM_BUILD_ROOT/etc/yum.repos.d
 
-# Combine GPG keys
-cat RPM-GPG-KEY-redhat-release-2 RPM-GPG-KEY-redhat-auxiliary > RPM-GPG-KEY-redhat-release
-rm RPM-GPG-KEY-redhat-release-2 RPM-GPG-KEY-redhat-auxiliary
-cat RPM-GPG-KEY-redhat-beta-2 RPM-GPG-KEY-redhat-legacy-beta > RPM-GPG-KEY-redhat-beta
-rm RPM-GPG-KEY-redhat-beta-2 RPM-GPG-KEY-redhat-legacy-beta
-
 # copy GPG keys
 mkdir -p -m 755 $RPM_BUILD_ROOT/etc/pki/rpm-gpg
 for file in RPM-GPG-KEY* ; do
