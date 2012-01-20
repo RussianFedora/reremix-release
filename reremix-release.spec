@@ -2,17 +2,17 @@
 %define product_family RERemix
 %define release_name Carbon
 %define base_release_version 6
-%define full_release_version 6.1
+%define full_release_version 6.2
 
 Name:           reremix-release%{?variant_lowercase:-%{variant_lowercase}}
-Version:        6.1
-Release:        3.R
+Version:        6.2
+Release:        0.2.rolling.R
 Summary:        %{product_family}%{?variant_titlecase: %{variant_titlecase}} release file
 Group:          System Environment/Base
 License:        GPLv2
 Obsoletes:      rawhide-release redhat-release-as redhat-release-es redhat-release-ws redhat-release-de comps rpmdb-redhat fedora-release sl-release
 Provides:       redhat-release system-release
-Source0:        http://download.rfremix.ru/storage/reremix-release/reremix-release-%{version}.tar.bz2
+Source0:        reremix-release-%{version}.tar.bz2
 Source1:	reremix-install-media-dvd.repo
 
 Requires:	reremix-config
@@ -105,6 +105,9 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
+* Fri Jan 20 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-0.2.rolling.R
+- update to 6rolling version
+
 * Sat Oct 29 2011 Arkady L. Shane <ashejn@russianfedora.ru> - 6.1-3.R
 - set Carbon as name of distribution (such as SL)
 
