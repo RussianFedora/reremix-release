@@ -3,7 +3,7 @@ name=RERemix Install Media DVD - $basearch
 failovermethod=priority
 baseurl=file:///media/RERemix%206.2%20$basearch%20DVD/
 enabled=0
-gpgcheck=1
+gpgcheck=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl6
        file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl5
        file:///etc/pki/rpm-gpg/RPM-GPG-KEY-sl4
