@@ -6,7 +6,7 @@
 
 Name:           reremix-release%{?variant_lowercase:-%{variant_lowercase}}
 Version:        6.2
-Release:        0.2.rolling.R
+Release:        1.R
 Summary:        %{product_family}%{?variant_titlecase: %{variant_titlecase}} release file
 Group:          System Environment/Base
 License:        GPLv2
@@ -99,6 +99,9 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
+* Thu Feb 16 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-1.R
+- final release
+
 * Fri Jan 20 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-0.2.rolling.R
 - update to 6rolling version
 
