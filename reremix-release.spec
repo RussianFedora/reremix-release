@@ -6,11 +6,13 @@
 
 Name:           reremix-release%{?variant_lowercase:-%{variant_lowercase}}
 Version:        6.2
-Release:        1.R
+Release:        2.R
 Summary:        %{product_family}%{?variant_titlecase: %{variant_titlecase}} release file
 Group:          System Environment/Base
 License:        GPLv2
 Obsoletes:      rawhide-release redhat-release-as redhat-release-es redhat-release-ws redhat-release-de comps rpmdb-redhat fedora-release sl-release
+Obsoletes:      centos-release redhat-release-server-6Server redhat-release-client-6Client redhat-release-computenode-6ComputeNode
+Obsoletes:      redhat-release-workstation-6Workstation
 Provides:       redhat-release system-release
 Source0:        reremix-release-%{version}.tar.bz2
 Source1:	reremix-install-media-dvd.repo
@@ -99,6 +101,9 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
+* Tue Feb 21 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-2.R
+- added more Obsoletes for Red Hat products
+
 * Thu Feb 16 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-1.R
 - final release
 
