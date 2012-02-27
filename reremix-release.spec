@@ -6,7 +6,7 @@
 
 Name:           reremix-release%{?variant_lowercase:-%{variant_lowercase}}
 Version:        6.2
-Release:        2.R
+Release:        3.R
 Summary:        %{product_family}%{?variant_titlecase: %{variant_titlecase}} release file
 Group:          System Environment/Base
 License:        GPLv2
@@ -68,7 +68,7 @@ cat >> $RPM_BUILD_ROOT/etc/rpm/macros.dist << EOF
 # dist macros.
 
 %%rhel %{base_release_version}
-%%dist .el%{base_release_version}
+%%dist .el%{base_release_version}.R
 %%el%{base_release_version} 1
 EOF
 
@@ -101,6 +101,9 @@ fi
 /etc/rpm/macros.dist
 
 %changelog
+* Mon Feb 27 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-3.R
+- %%dist is now with .R
+
 * Tue Feb 21 2012 Arkady L. Shane <ashejn@russianfedora.ru> - 6.2-2.R
 - added more Obsoletes for Red Hat products
 
