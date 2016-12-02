@@ -4,13 +4,13 @@
 %define variant_lowercase server
 %define release_name Broken
 %define base_release_version 7
-%define full_release_version 7
+%define full_release_version 7.3
 %define dist_release_version 7
 #define beta Beta
 %define dist .el%{dist_release_version}.R
 
 Name:           reremix-release
-Version:        %{base_release_version}
+Version:        %{full_release_version}
 Release:        1%{?dist}
 Epoch:		1
 Summary:        %{product_family} release file
@@ -23,8 +23,12 @@ Provides:       redhat-release = 7.0
 Provides:       system-release = %{epoch}:%{version}-%{release}
 Provides:       system-release = 7.0
 Provides:       system-release(releasever) = %{base_release_version}
-Obsoletes:	centos-release
-Obsoletes:	sl-release
+Obsoletes:	centos-release < %{full_release_version}
+Obsoletes:	sl-release < %{full_release_version}
+Obsoletes:	sl-release < %{full_release_version}
+Obsoletes:	springdale-release < %{full_release_version}
+Obsoletes:	cloudlinux-release < %{full_release_version}
+
 Source0:        reremix-release-%{base_release_version}.tar.xz
 Source1:        85-display-manager.preset
 Source2:        90-default.preset
@@ -136,5 +140,9 @@ rm -rf %{buildroot}
 %{_prefix}/lib/systemd/system-preset/*
 
 %changelog
+* Fri Dec  2 2016 Arkady L. Shane <ashejn@russianfedora.pro> - 7.3-1.R
+- update for 7.3
+- obsolete more release files
+
 * Tue Jul  8 2014 Arkady L. Shane <ashejn@russianfedora.ru> - 7.0.el7.0.140617.3
 - Yes. We planning RERemix 7
